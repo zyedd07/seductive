@@ -1,0 +1,794 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Seductive Medical & Beauty Equipment - Home">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="red-wave"></div>
+            <div class="white-wave"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="badge animate-fade">
+                    <span class="badge-dot"></span>
+                    <span>Trusted Since 2009</span>
+                </div>
+                
+                <h1 class="hero-heading animate-slide-up">
+                    Redefining Beauty Through
+                    <span class="red-text">Innovation</span>
+                </h1>
+                
+                <p class="hero-text animate-slide-up delay-1">
+                    Experience the pinnacle of medical aesthetics technology with our comprehensive range of 40+ advanced devices, transforming beauty standards across 60+ countries.
+                </p>
+                
+                <div class="hero-buttons animate-slide-up delay-2">
+                    <a href="/products" class="btn-red">
+                        <span>Explore Products</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="/contact" class="btn-white">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats animate-fade delay-3">
+                    <div class="stat">
+                        <div class="stat-num" data-count="60">0</div>
+                        <div class="stat-text">Countries</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-num" data-count="16">0</div>
+                        <div class="stat-text">Years</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-num" data-count="40">0</div>
+                        <div class="stat-text">Models</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-num" data-count="14">0</div>
+                        <div class="stat-text">Series</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-right animate-fade delay-2">
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800" alt="Medical Equipment" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <div>
+                            <div class="card-title">ISO Certified</div>
+                            <div class="card-desc">Quality Assured</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <div>
+                            <div class="card-title">CE Approved</div>
+                            <div class="card-desc">EU Standards</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <div>
+                            <div class="card-title">24/7 Support</div>
+                            <div class="card-desc">Always Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="products-container">
+            <div class="section-head animate-on-scroll slide-up">
+                <span class="section-label">Our Technology</span>
+                <h2 class="section-title">
+                    14 Revolutionary <span class="red-text">Product Series</span>
+                </h2>
+                <p class="section-subtitle">
+                    Cutting-edge solutions designed to transform aesthetic medicine
+                </p>
+            </div>
+
+            <div class="logo-grid">
+                <div class="logo-card animate-on-scroll fade-in">
+                    <h3>CO2 Laser Systems</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-1">
+                    <h3>Diode Laser Hair Removal</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-2">
+                    <h3>1064nm ND YAG Laser</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-3">
+                    <h3>Picosecond Laser</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in">
+                    <h3>Dental Laser Equipment</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-1">
+                    <h3>Q Switch ND YAG Laser</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-2">
+                    <h3>Spider Veins Removal</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-3">
+                    <h3>E-light IPL RF Systems</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in">
+                    <h3>SHR Technology</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-1">
+                    <h3>HIFU Devices</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-2">
+                    <h3>Cryolipolysis Slimming</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-3">
+                    <h3>Cooling Beauty Machines</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in">
+                    <h3>LED Mask Systems</h3>
+                </div>
+
+                <div class="logo-card animate-on-scroll fade-in delay-1">
+                    <h3>Hydro Facial Equipment</h3>
+                </div>
+
+                <div class="logo-card logo-card-empty animate-on-scroll fade-in delay-2">
+                </div>
+
+                <div class="logo-card logo-card-empty animate-on-scroll fade-in delay-3">
+                </div>
+            </div>
+
+            <div class="cta-box animate-on-scroll fade-in">
+                <a href="/products" class="btn-red-large">
+                    <span>View All Technologies</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --red: #e31e3f;
+            --red-dark: #c41a35;
+            --red-light: #ff4d6d;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-600: #4b5563;
+            --gray-900: #111827;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .red-wave {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 120%;
+            height: 120%;
+            background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+            border-radius: 50% 0 0 50%;
+            opacity: 0.95;
+        }
+
+        .white-wave {
+            position: absolute;
+            bottom: -20%;
+            right: -10%;
+            width: 100%;
+            height: 60%;
+            background: var(--white);
+            border-radius: 50% 50% 0 0;
+            opacity: 0.1;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 140px 60px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gray-50);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 32px;
+            border: 1px solid var(--gray-100);
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--red);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .hero-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--gray-900);
+            margin-bottom: 28px;
+            letter-spacing: -1px;
+        }
+
+        .red-text {
+            color: var(--red);
+        }
+
+        .hero-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--gray-600);
+            margin-bottom: 40px;
+            max-width: 540px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 60px;
+        }
+
+        .btn-red {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--red);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(227, 30, 63, 0.3);
+        }
+
+        .btn-red:hover {
+            background: var(--red-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(227, 30, 63, 0.4);
+        }
+
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--white);
+            color: var(--gray-900);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 2px solid var(--gray-100);
+        }
+
+        .btn-white:hover {
+            border-color: var(--red);
+            color: var(--red);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+        }
+
+        .stat-num::after {
+            content: '+';
+            font-size: 24px;
+        }
+
+        .stat-text {
+            font-size: 13px;
+            color: var(--gray-600);
+            font-weight: 600;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 40px;
+            background: var(--gray-100);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .image-frame {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.1) 0%, transparent 100%);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: var(--white);
+            padding: 20px 24px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-card svg {
+            color: var(--red);
+            flex-shrink: 0;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 2px;
+        }
+
+        .card-desc {
+            font-size: 12px;
+            color: var(--gray-600);
+        }
+
+        .card-1 {
+            top: 10%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+
+        .card-2 {
+            top: 50%;
+            right: -10%;
+            animation-delay: 1s;
+        }
+
+        .card-3 {
+            bottom: 10%;
+            left: -5%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Products Section */
+        .products {
+            background: #ffffff;
+            padding: 120px 60px;
+        }
+
+        .products-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--white);
+            color: var(--red);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border: 2px solid var(--red);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Logo Grid */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: #e5e7eb;
+            margin-bottom: 60px;
+        }
+
+        .logo-card {
+            background: var(--white);
+            padding: 50px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .logo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gray-50);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .logo-card:hover {
+            z-index: 1;
+        }
+
+        .logo-card:hover::before {
+            opacity: 1;
+        }
+
+        .logo-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin: 0;
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+        }
+
+        .logo-card:hover h3 {
+            color: var(--red);
+        }
+
+        .logo-card-empty {
+            background: transparent;
+            cursor: default;
+        }
+
+        .cta-box {
+            text-align: center;
+        }
+
+        .btn-red-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--red);
+            color: var(--white);
+            padding: 20px 44px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.3);
+        }
+
+        .btn-red-large:hover {
+            background: var(--red-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.4);
+        }
+
+        /* Animations */
+        .animate-fade {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .animate-slide-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+        }
+
+        .slide-up {
+            transform: translateY(60px);
+        }
+
+        .slide-up.animated {
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            opacity: 0;
+        }
+
+        .fade-in.animated {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 60px;
+                padding: 120px 40px 60px;
+            }
+
+            .hero-heading {
+                font-size: 52px;
+            }
+
+            .hero-bg {
+                width: 100%;
+                height: 50%;
+                top: 0;
+            }
+
+            .floating-card {
+                display: none;
+            }
+
+            .logo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                padding: 100px 24px 40px;
+            }
+
+            .hero-heading {
+                font-size: 38px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-red,
+            .btn-white {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+
+            .stat-divider {
+                display: none;
+            }
+
+            .products {
+                padding: 80px 24px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .logo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .logo-card {
+                padding: 40px 20px;
+            }
+
+            .logo-card h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter animation
+        const animateCounter = (element, target) => {
+            let current = 0;
+            const increment = target / 60;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = Math.floor(target);
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 25);
+        };
+
+        document.querySelectorAll('.stat-num').forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            animateCounter(counter, target);
+        });
+
+        // Logo card hover effects
+        document.querySelectorAll('.logo-card:not(.logo-card-empty)').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 8px 24px rgba(227, 30, 63, 0.12)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</Layout>

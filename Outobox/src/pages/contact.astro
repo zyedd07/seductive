@@ -1,0 +1,1187 @@
+---
+// src/pages/contact.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us - Seductive Medical & Beauty Equipment">
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="badge animate-fade">
+                        <span class="badge-dot"></span>
+                        <span>Let's Talk</span>
+                    </div>
+                    
+                    <h1 class="hero-heading animate-slide-up">
+                        Start Your Journey to
+                        <span class="red-text">Success</span>
+                    </h1>
+                    
+                    <p class="hero-text animate-slide-up delay-1">
+                        Connect with our experts today and discover how our advanced medical beauty equipment can transform your business and elevate your services to new heights.
+                    </p>
+                    
+                    <div class="hero-stats animate-fade delay-2">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">Support</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">60+</div>
+                                <div class="stat-label">Countries</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">&lt;24h</div>
+                                <div class="stat-label">Response</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-right animate-fade delay-2">
+                    <div class="contact-methods">
+                        <div class="method-card card-phone">
+                            <div class="method-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">Phone</div>
+                                <a href="tel:+971525248785" class="method-value">+971 52 524 8785</a>
+                                <p class="method-desc">Call us directly for immediate assistance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method-card card-email">
+                            <div class="method-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">Email</div>
+                                <a href="mailto:admin@seductive.ae" class="method-value">admin@seductive.ae</a>
+                                <p class="method-desc">Send us your detailed inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method-card card-whatsapp">
+                            <div class="method-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">WhatsApp</div>
+                                <a href="https://wa.me/919656398483" target="_blank" class="method-value">+91 965 639 8483</a>
+                                <p class="method-desc">Chat with us for quick responses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-grid">
+                <!-- Form -->
+                <div class="form-wrapper animate-on-scroll slide-up">
+                    <div class="form-header">
+                        <span class="section-label">Send Message</span>
+                        <h2 class="section-title">
+                            How Can We <span class="red-text">Help You?</span>
+                        </h2>
+                        <p class="form-subtitle">
+                            Fill out the form below and we'll get back to you within 24 hours
+                        </p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="product">Product Interest</label>
+                                <select id="product" required>
+                                    <option value="">Select a product</option>
+                                    <option value="diode">Diode Laser Hair Removal</option>
+                                    <option value="picosecond">Picosecond Laser</option>
+                                    <option value="co2">CO2 Fractional Laser</option>
+                                    <option value="ndyag">Q-Switch ND YAG</option>
+                                    <option value="hifu">HIFU Machine</option>
+                                    <option value="ems">EMS Body Sculpting</option>
+                                    <option value="other">Other Products</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-red-large">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Sidebar -->
+                <div class="info-sidebar animate-on-scroll fade-in delay-2">
+                    <div class="info-box">
+                        <h3>Why Choose Us?</h3>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>16+ Years Experience</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>60+ Countries Served</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>ISO & CE Certified</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>24/7 Technical Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Free Consultation</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Worldwide Shipping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-box">
+                        <h3>Visit Our Office</h3>
+                        <div class="location-content">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <p class="location-text">
+                                    Office No.57, 4th Floor<br>
+                                    UNIGROVE Business Center<br>
+                                    Al Gaizi Plaza, Al Garhoud<br>
+                                    Dubai - UAE
+                                </p>
+                                <a href="https://www.google.com/maps/place/UNIGROVE+Business+Center/@25.2539427,55.331997,15.47z/data=!4m6!3m5!1s0x3e5f5d0041fd950d:0xd0ad24bc30823d79!8m2!3d25.2527312!4d55.3388341!16s%2Fg%2F11vsc_9spx?entry=ttu" target="_blank" class="location-link">
+                                    Get Directions
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="section-head animate-on-scroll slide-up">
+                <span class="section-label">Find Us</span>
+                <h2 class="section-title">
+                    Our <span class="red-text">Location</span>
+                </h2>
+            </div>
+            
+            <div class="map-wrapper animate-on-scroll fade-in delay-2">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.4707889343597!2d55.336644575758845!3d25.252731277654088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d0041fd950d%3A0xd0ad24bc30823d79!2sUNIGROVE%20Business%20Center!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="500" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-head animate-on-scroll slide-up">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">
+                    Frequently Asked <span class="red-text">Questions</span>
+                </h2>
+                <p class="section-subtitle">
+                    Find answers to common questions about our products and services
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-card animate-on-scroll scale-up">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>What is your delivery time?</h3>
+                    <p>Our standard delivery time is 7-15 business days after order confirmation. Express shipping options are available for urgent orders.</p>
+                </div>
+
+                <div class="faq-card animate-on-scroll scale-up delay-1">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <h3>Do you provide training?</h3>
+                    <p>Yes, we provide comprehensive training materials, video tutorials, and technical support to ensure you can operate our equipment effectively.</p>
+                </div>
+
+                <div class="faq-card animate-on-scroll scale-up delay-2">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>What warranty do you offer?</h3>
+                    <p>All our products come with a standard 1-2 year warranty covering manufacturing defects. Extended warranty options are available.</p>
+                </div>
+
+                <div class="faq-card animate-on-scroll scale-up delay-3">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Can I customize products?</h3>
+                    <p>Yes, we offer OEM/ODM services and can customize products according to your specific requirements and branding needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --red: #e31e3f;
+            --red-dark: #c41a35;
+            --red-light: #ff4d6d;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-600: #4b5563;
+            --gray-900: #111827;
+        }
+
+        /* Hero Section */
+        .contact-hero {
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #fef5f7 100%);
+            padding: 140px 60px 100px;
+            overflow: hidden;
+        }
+
+        .hero-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .shape-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--red), transparent);
+            top: -200px;
+            right: -100px;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--red-light), transparent);
+            bottom: -150px;
+            left: -100px;
+            animation: float 25s infinite ease-in-out reverse;
+        }
+
+        .shape-3 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--red), transparent);
+            top: 40%;
+            left: 50%;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(50px, -50px) scale(1.1); }
+            66% { transform: translate(-30px, 30px) scale(0.9); }
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 32px;
+            border: 2px solid var(--gray-100);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--red);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .hero-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--gray-900);
+            margin-bottom: 28px;
+            letter-spacing: -1px;
+        }
+
+        .red-text {
+            color: var(--red);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--gray-600);
+            margin-bottom: 40px;
+            max-width: 540px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(227, 30, 63, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--red);
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--gray-600);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Contact Methods */
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .method-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            border: 2px solid var(--gray-100);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .method-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--red);
+            transform: scaleY(0);
+            transition: transform 0.4s;
+        }
+
+        .method-card:hover {
+            transform: translateX(8px);
+            border-color: var(--red);
+            box-shadow: 0 16px 48px rgba(227, 30, 63, 0.15);
+        }
+
+        .method-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .card-phone:hover {
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.03) 0%, var(--white) 100%);
+        }
+
+        .card-email:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, var(--white) 100%);
+        }
+
+        .card-whatsapp:hover {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.03) 0%, var(--white) 100%);
+        }
+
+        .method-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(227, 30, 63, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--red);
+            flex-shrink: 0;
+            transition: all 0.3s;
+        }
+
+        .card-whatsapp .method-icon {
+            background: rgba(37, 211, 102, 0.1);
+            color: #25D366;
+        }
+
+        .card-email .method-icon {
+            background: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+        }
+
+        .method-card:hover .method-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .method-content {
+            flex: 1;
+        }
+
+        .method-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .method-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gray-900);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+
+        .method-value:hover {
+            color: var(--red);
+        }
+
+        .method-desc {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.5;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: var(--gray-50);
+            padding: 120px 60px;
+        }
+
+        .form-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .form-wrapper {
+            background: var(--white);
+            padding: 56px;
+            border-radius: 24px;
+            border: 2px solid var(--gray-100);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-header {
+            margin-bottom: 40px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--white);
+            color: var(--red);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border: 2px solid var(--red);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .form-subtitle {
+            font-size: 16px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-field label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+        }
+
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
+            padding: 16px 20px;
+            border: 2px solid var(--gray-100);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s;
+            background: var(--white);
+            color: var(--gray-900);
+        }
+
+        .form-field input:focus,
+        .form-field select:focus,
+        .form-field textarea:focus {
+            outline: none;
+            border-color: var(--red);
+            box-shadow: 0 0 0 4px rgba(227, 30, 63, 0.1);
+        }
+
+        .form-field textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn-red-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--red);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.3);
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .btn-red-large:hover {
+            background: var(--red-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.4);
+        }
+
+        /* Info Sidebar */
+        .info-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .info-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid var(--gray-100);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .info-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 24px;
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+
+        .feature-item svg {
+            color: var(--red);
+            flex-shrink: 0;
+        }
+
+        .location-box {
+            background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+            padding: 40px;
+            border-radius: 16px;
+            color: var(--white);
+        }
+
+        .location-box h3 {
+            color: var(--white);
+        }
+
+        .location-content {
+            display: flex;
+            gap: 16px;
+        }
+
+        .location-content svg {
+            color: var(--white);
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .location-text {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .location-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .location-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(4px);
+        }
+
+        /* Map Section */
+        .map-section {
+            background: var(--white);
+            padding: 120px 60px;
+        }
+
+        .map-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .map-wrapper {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            border: 2px solid var(--gray-100);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--gray-50);
+            padding: 120px 60px;
+        }
+
+        .faq-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .faq-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid var(--gray-100);
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(227, 30, 63, 0.15);
+            border-color: var(--red);
+        }
+
+        .faq-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(227, 30, 63, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--red);
+            margin-bottom: 24px;
+        }
+
+        .faq-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+        }
+
+        .faq-card p {
+            font-size: 16px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Animations */
+        .animate-fade {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .animate-slide-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+        }
+
+        .slide-up {
+            transform: translateY(60px);
+        }
+
+        .slide-up.animated {
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            opacity: 0;
+        }
+
+        .fade-in.animated {
+            opacity: 1;
+        }
+
+        .scale-up {
+            transform: scale(0.95);
+        }
+
+        .scale-up.animated {
+            transform: scale(1);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .hero-left {
+                max-width: 100%;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero {
+                padding: 120px 24px 80px;
+            }
+
+            .hero-heading {
+                font-size: 38px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .stat-item {
+                width: 100%;
+            }
+
+            .contact-methods {
+                gap: 16px;
+            }
+
+            .method-card {
+                padding: 24px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .method-icon {
+                width: 64px;
+                height: 64px;
+                margin: 0 auto;
+            }
+
+            .method-content {
+                text-align: center;
+            }
+
+            .method-value {
+                font-size: 16px;
+            }
+
+            .method-desc {
+                font-size: 13px;
+            }
+
+            .form-section,
+            .map-section,
+            .faq-section {
+                padding: 80px 24px;
+            }
+
+            .form-wrapper {
+                padding: 32px 24px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .info-box,
+            .location-box {
+                padding: 28px;
+            }
+
+            .faq-card {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+
+    <script>
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const product = document.getElementById('product').value;
+            const message = document.getElementById('message').value;
+            
+            // Get product name from select option
+            const productSelect = document.getElementById('product');
+            const productName = productSelect.options[productSelect.selectedIndex].text;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `*New Inquiry*\n\n` +
+                `*Name:* ${name}\n` +
+                `*Email:* ${email}\n` +
+                `*Phone:* ${phone}\n` +
+                `*Product Interest:* ${productName}\n\n` +
+                `*Message:*\n${message}`;
+            
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // WhatsApp number (without + and spaces)
+            const whatsappNumber = '919656398483';
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            alert('Redirecting to WhatsApp... Your inquiry will be sent shortly.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</Layout>

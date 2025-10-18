@@ -1,0 +1,92 @@
+
+// src/components/Footer.astro
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>SEDUCTIVE</h4>
+        <p>Medical & Beauty Equipments</p>
+        <p class="footer-desc">Leading manufacturer of advanced medical and beauty laser equipment with 16 years of excellence.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Products</h4>
+        <a href="/products">Diode Laser</a>
+        <a href="/products">Picosecond Laser</a>
+        <a href="/products">CO2 Laser</a>
+        <a href="/products">HIFU Machine</a>
+        <a href="/products">EMS Sculpting</a>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+        <a href="/contact">Get a Quote</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Seductive Medical & Beauty Equipment. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--secondary);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 60px 0 32px;
+    margin-top: 80px;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+
+  .footer-section h4 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+
+  .footer-desc {
+    opacity: 0.7;
+  }
+
+  .footer-section a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+  }
+
+  .footer-section a:hover {
+    color: var(--white);
+    padding-left: 4px;
+  }
+
+  .footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+</style>
