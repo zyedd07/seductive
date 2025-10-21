@@ -16,33 +16,43 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
 <body>
     <!-- Navigation -->
     <nav class="nav" id="navbar">
-        <div class="container nav-content">
-            <div class="logo-container">
-                <div class="logo-pulse"></div>
-                <div>
-                    <img src="/logo.jpg" alt="Seductive Company" class="about-img">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="logo-link">
+                    <div class="logo-wrapper">
+                        <img src="/lo.png" alt="Seductive Company" class="logo-img">
+                    </div>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/products" class="nav-link">Products</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/contact" class="btn-nav-cta">
+                        <span>Get Quote</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/products" class="nav-link">Products</a>
-                <a href="/about" class="nav-link">About Us</a>
-                <a href="/contact" class="btn-nav-primary">Contact Us</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="/" class="mobile-link">Home</a>
-        <a href="/products" class="mobile-link">Products</a>
-        <a href="/about" class="mobile-link">About Us</a>
-        <a href="/contact" class="mobile-link">Contact Us</a>
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-link">Home</a>
+            <a href="/products" class="mobile-link">Products</a>
+            <a href="/about" class="mobile-link">About</a>
+            <a href="/contact" class="mobile-link mobile-link-cta">Get Quote</a>
+        </div>
     </div>
 
     <!-- Main Content -->
@@ -52,62 +62,81 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
+            <!-- Footer Top -->
             <div class="footer-top">
                 <div class="footer-brand">
-                    <div class="footer-logo-wrapper">
-                        <div class="logo-pulse"></div>
-                        <div>
-                            <h3 class="footer-logo">SEDUCTIVE</h3>
-                            <p class="footer-tagline">Medical & Beauty Equipments</p>
-                        </div>
+                    <div class="footer-logo-box">
+                        <img src="/lo.png" alt="Seductive" class="footer-logo-img">
                     </div>
+                    <p class="footer-tagline">
+                        Transforming Beauty Through Innovation
+                    </p>
                     <p class="footer-description">
-                        Leading manufacturer of advanced medical and beauty laser equipment with 16 years of excellence. 40 models exported to 60+ countries worldwide.
+                        16 years of excellence in medical aesthetics. Trusted by professionals worldwide.
                     </p>
                 </div>
 
-                <div class="footer-links">
-                    <h4>Products</h4>
-                    <a href="/products">Diode Laser</a>
-                    <a href="/products">Picosecond Laser</a>
-                    <a href="/products">CO2 Laser</a>
-                    <a href="/products">HIFU Machine</a>
-                    <a href="/products">EMS Sculpting</a>
-                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/products">Products</a></li>
+                            <li><a href="/about">About Us</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <a href="/">Home</a>
-                    <a href="/about">About Us</a>
-                    <a href="/about#factory">Our Factory</a>
-                    <a href="/about#team">Our Team</a>
-                </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Products</h4>
+                        <ul class="footer-list">
+                            <li><a href="/products">Laser Systems</a></li>
+                            <li><a href="/products">HIFU Devices</a></li>
+                            <li><a href="/products">Beauty Equipment</a></li>
+                            <li><a href="/products">View All</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-links">
-                    <h4>Support</h4>
-                    <a href="/contact">Get a Quote</a>
-                    <a href="/contact">After-Sale Service</a>
-                    <a href="/contact">Technical Support</a>
-                    <a href="/contact">Shipping Info</a>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <div class="footer-column">
+                        <ul class="footer-list">
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                        <div class="footer-metrics">
+                            <div class="metric-item">
+                                <span class="metric-num">60+</span>
+                                <span class="metric-label">Countries</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-num">40+</span>
+                                <span class="metric-label">Models</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 Seductive Medical & Beauty Equipments. All rights reserved.</p>
-                <div class="footer-socials">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
+                <p class="footer-copyright">
+                    &copy; 2025 Seductive. All rights reserved.
+                </p>
+                <div class="footer-badges">
+                    <span class="badge-item">ISO Certified</span>
+                    <span class="badge-divider">•</span>
+                    <span class="badge-item">CE Approved</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
 
@@ -119,21 +148,14 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
         }
 
         :root {
-            --primary: #e31e3f;
-            --primary-dark: #c01632;
-            --primary-light: #ff3355;
-            --secondary: #1a1a2e;
-            --dark: #0f0f1e;
-            --light-bg: #f8f9fa;
+            --red: #e31e3f;
+            --red-dark: #c41a35;
             --white: #ffffff;
-            --text-dark: #1a1a1a;
-            --text-gray: #666666;
-            --text-light: #999999;
-            --border: #e5e5e5;
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
-            --gradient: linear-gradient(135deg, #e31e3f 0%, #c01632 100%);
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-600: #4b5563;
+            --gray-900: #111827;
+            --dark: #0a0a0f;
         }
 
         html {
@@ -142,146 +164,165 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
 
         body {
             font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
+            color: var(--gray-900);
             line-height: 1.6;
             background: var(--white);
             overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 32px;
-        }
-.about-img {
-            width: 120px;
-            height: 60px;
-            display: block;
-            background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
-            object-fit: cover;
-        }
-
-        /* Navigation */
+        /* Navigation - Transparent with Glassmorphism */
         .nav {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
+            background: transparent;
             z-index: 1000;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav.scrolled {
-            box-shadow: var(--shadow);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+            border-bottom: 1px solid rgba(227, 30, 63, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 60px;
         }
 
         .nav-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 24px 32px;
-            transition: padding 0.3s ease;
+            padding: 28px 0;
+            transition: padding 0.4s ease;
         }
 
         .nav.scrolled .nav-content {
-            padding: 16px 32px;
+            padding: 20px 0;
         }
 
-        .logo-container {
+        .logo-link {
+            text-decoration: none;
+        }
+
+        .logo-wrapper {
             display: flex;
             align-items: center;
-            gap: 16px;
-            position: relative;
         }
 
-        .logo-pulse {
-            width: 10px;
-            height: 10px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
+        .logo-img {
+            height: 88px;
+            width: auto;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 1;
+        /* Mobile - always show solid navbar */
+        @media (max-width: 768px) {
+            .nav {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
             }
-            50% {
-                transform: scale(1.3);
-                opacity: 0.7;
+
+            body.home-page .nav .mobile-menu-btn span {
+                background: var(--gray-900);
             }
         }
 
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 26px;
-            font-weight: 900;
-            color: var(--text-dark);
-            letter-spacing: 2px;
+        .nav.scrolled .logo-img {
+            height: 42px;
         }
 
-        .logo-subtitle {
-            font-size: 10px;
-            color: var(--text-gray);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-top: -4px;
+        .logo-link:hover .logo-img {
+            transform: scale(1.05);
         }
 
         .nav-links {
             display: flex;
-            gap: 40px;
+            gap: 48px;
             align-items: center;
         }
 
         .nav-link {
-            color: var(--text-dark);
+            color: var(--gray-900);
             text-decoration: none;
             font-weight: 500;
             font-size: 15px;
-            transition: color 0.3s;
+            transition: all 0.3s;
             position: relative;
+            letter-spacing: -0.01em;
+        }
+
+        /* Home page only - white text with black hover */
+        body.home-page .nav:not(.scrolled) .nav-link {
+            color: var(--white);
+        }
+
+        body.home-page .nav:not(.scrolled) .nav-link:hover {
+            color: var(--gray-900);
         }
 
         .nav-link::after {
             content: '';
             position: absolute;
-            bottom: -4px;
-            left: 0;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 2px;
-            background: var(--primary);
-            transition: width 0.3s;
+            background: var(--red);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        body.home-page .nav:not(.scrolled) .nav-link::after {
+            background: var(--gray-900);
         }
 
         .nav-link:hover {
-            color: var(--primary);
+            color: var(--red);
         }
 
         .nav-link:hover::after {
             width: 100%;
         }
 
-        .btn-nav-primary {
-            background: var(--gradient);
+        .btn-nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--red);
             color: var(--white);
-            padding: 10px 24px;
-            border-radius: 8px;
+            padding: 12px 28px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 14px;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(227, 30, 63, 0.25);
         }
 
-        .btn-nav-primary:hover {
+        .btn-nav-cta:hover {
+            background: var(--red-dark);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(227, 30, 63, 0.3);
+            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.35);
         }
 
+        .btn-nav-cta svg {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-nav-cta:hover svg {
+            transform: translateX(3px);
+        }
+
+        /* Mobile Menu */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -290,173 +331,279 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
             border: none;
             cursor: pointer;
             padding: 8px;
+            z-index: 1001;
         }
 
         .mobile-menu-btn span {
-            width: 25px;
-            height: 3px;
-            background: var(--text-dark);
-            transition: 0.3s;
+            width: 26px;
+            height: 2.5px;
+            background: var(--gray-900);
+            transition: all 0.3s ease;
             border-radius: 3px;
+        }
+
+        /* Home page - white hamburger on transparent nav (desktop only) */
+        body.home-page .nav:not(.scrolled) .mobile-menu-btn span {
+            background: var(--white);
+        }
+
+        .nav.scrolled .mobile-menu-btn span {
+            background: var(--gray-900);
+        }
+
+        /* Mobile override - always dark hamburger */
+        @media (max-width: 768px) {
+            body.home-page .nav .mobile-menu-btn span {
+                background: var(--gray-900);
+            }
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
         }
 
         .mobile-menu {
             position: fixed;
-            top: 80px;
-            left: -100%;
-            width: 100%;
-            height: calc(100vh - 80px);
-            background: var(--white);
-            display: flex;
-            flex-direction: column;
-            padding: 32px;
-            gap: 24px;
-            transition: left 0.3s;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 999;
         }
 
         .mobile-menu.active {
-            left: 0;
+            transform: translateX(0);
+        }
+
+        .mobile-menu-content {
+            padding: 120px 32px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
 
         .mobile-link {
-            color: var(--text-dark);
+            color: var(--gray-900);
             text-decoration: none;
             font-size: 18px;
             font-weight: 500;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border);
+            padding: 18px 24px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
         }
 
-        /* Common Button Styles */
-        .btn-primary {
-            background: var(--gradient);
+        .mobile-link:hover {
+            background: var(--gray-50);
+            color: var(--red);
+            transform: translateX(4px);
+        }
+
+        .mobile-link-cta {
+            background: var(--red);
             color: var(--white);
-            padding: 16px 32px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: none;
-            cursor: pointer;
+            margin-top: 24px;
+            text-align: center;
         }
 
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(227, 30, 63, 0.35);
+        .mobile-link-cta:hover {
+            background: var(--red-dark);
+            transform: translateX(0) translateY(-2px);
         }
 
-        .btn-secondary {
-            background: var(--white);
-            color: var(--text-dark);
-            padding: 16px 32px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s;
-            border: 2px solid var(--border);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        /* Footer */
+        /* Footer - Minimalist Design */
         .footer {
-            background: var(--secondary);
+            background: linear-gradient(135deg, var(--dark) 0%, #16161f 100%);
             color: rgba(255, 255, 255, 0.8);
-            padding: 80px 0 32px;
+            padding: 80px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--red), transparent);
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 60px;
         }
 
         .footer-top {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 60px;
+            grid-template-columns: 1.5fr 2fr;
+            gap: 100px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        .footer-logo-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+        .footer-brand {
+            max-width: 380px;
+        }
+
+        .footer-logo-box {
             margin-bottom: 20px;
         }
 
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 900;
-            color: var(--white);
-            letter-spacing: 2px;
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            filter: brightness(0) invert(1);
+            opacity: 0.95;
         }
 
         .footer-tagline {
-            font-size: 10px;
-            color: rgba(255, 255, 255, 0.5);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
 
         .footer-description {
-            line-height: 1.8;
             font-size: 14px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.5);
         }
 
-        .footer-links {
+        .footer-links-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+        }
+
+        .footer-column {
             display: flex;
             flex-direction: column;
-            gap: 16px;
         }
 
-        .footer-links h4 {
-            font-size: 16px;
+        .footer-heading {
+            font-size: 14px;
             font-weight: 700;
-            margin-bottom: 8px;
             color: var(--white);
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
+        .footer-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-list a {
+            color: rgba(255, 255, 255, 0.5);
             text-decoration: none;
             font-size: 14px;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            display: inline-block;
         }
 
-        .footer-links a:hover {
+        .footer-list a:hover {
             color: var(--white);
-            padding-left: 4px;
+            transform: translateX(4px);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .social-icon:hover {
+            background: var(--red);
+            color: var(--white);
+            transform: translateY(-3px);
+            border-color: var(--red);
+        }
+
+        .footer-metrics {
+            display: flex;
+            gap: 32px;
+        }
+
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--red);
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .footer-bottom {
+            padding: 28px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 14px;
         }
 
-        .footer-socials {
+        .footer-copyright {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .footer-badges {
             display: flex;
-            gap: 24px;
+            align-items: center;
+            gap: 12px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
         }
 
-        .social-link {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s;
+        .badge-item {
+            font-weight: 500;
         }
 
-        .social-link:hover {
-            color: var(--white);
+        .badge-divider {
+            color: rgba(255, 255, 255, 0.2);
         }
 
         /* Back to Top */
@@ -464,9 +611,9 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
             position: fixed;
             bottom: 32px;
             right: 32px;
-            width: 50px;
-            height: 50px;
-            background: var(--gradient);
+            width: 52px;
+            height: 52px;
+            background: var(--red);
             color: var(--white);
             border: none;
             border-radius: 50%;
@@ -474,11 +621,11 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.3);
             opacity: 0;
             pointer-events: none;
-            transition: all 0.3s;
-            z-index: 999;
+            transition: all 0.3s ease;
+            z-index: 998;
         }
 
         .back-to-top.visible {
@@ -488,12 +635,43 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
 
         .back-to-top:hover {
             transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.4);
         }
 
         /* Responsive Design */
+        @media (max-width: 1200px) {
+            .nav-container,
+            .footer-container {
+                padding: 0 40px;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .footer-brand {
+                max-width: 100%;
+            }
+
+            .footer-links-group {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+            }
+        }
+
         @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
+            .nav-container,
+            .footer-container {
+                padding: 0 24px;
+            }
+
+            .nav-content {
+                padding: 20px 0;
+            }
+
+            .nav.scrolled .nav-content {
+                padding: 16px 0;
             }
 
             .nav-links {
@@ -504,43 +682,79 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
                 display: flex;
             }
 
+            .logo-img {
+                height: 42px;
+            }
+
+            .nav.scrolled .logo-img {
+                height: 38px;
+            }
+
+            .footer {
+                padding: 60px 0 0;
+            }
+
             .footer-top {
+                gap: 48px;
+                padding-bottom: 48px;
+            }
+
+            .footer-links-group {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 36px;
             }
 
             .footer-bottom {
                 flex-direction: column;
                 gap: 16px;
                 text-align: center;
+                padding: 24px 0;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 48px;
+                height: 48px;
             }
         }
 
         ::selection {
-            background: var(--primary);
+            background: var(--red);
             color: var(--white);
         }
     </style>
 
     <script>
+        // Add home-page class if on home page
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            document.body.classList.add('home-page');
+        }
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         
         mobileMenuBtn?.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
             mobileMenu?.classList.toggle('active');
+            document.body.style.overflow = mobileMenu?.classList.contains('active') ? 'hidden' : '';
         });
 
+        // Close mobile menu when clicking a link
         document.querySelectorAll('.mobile-link').forEach(link => {
             link.addEventListener('click', () => {
+                mobileMenuBtn?.classList.remove('active');
                 mobileMenu?.classList.remove('active');
+                document.body.style.overflow = '';
             });
         });
 
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
+        
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
+            if (window.pageYOffset > 50) {
                 navbar?.classList.add('scrolled');
             } else {
                 navbar?.classList.remove('scrolled');
@@ -549,6 +763,7 @@ const { title = "Seductive Medical & Beauty Equipment" } = Astro.props;
 
         // Back to top button
         const backToTop = document.getElementById('backToTop');
+        
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 500) {
                 backToTop?.classList.add('visible');

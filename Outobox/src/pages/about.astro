@@ -4,179 +4,89 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About Us - Seductive Medical & Beauty Equipment">
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <div class="about-hero-container">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-wave"></div>
+        <div class="header-content">
             <div class="badge animate-fade">
                 <span class="badge-dot"></span>
                 <span>Our Story</span>
             </div>
-            
-            <h1 class="about-hero-heading animate-slide-up">
+            <h1 class="header-title animate-slide-up">
                 About <span class="red-text">Seductive</span>
             </h1>
-            
-            <p class="about-hero-text animate-slide-up delay-1">
-                16 years of excellence in medical and beauty equipment manufacturing, serving professionals across 60+ countries worldwide
+            <p class="header-subtitle animate-slide-up delay-1">
+                16 years of excellence in medical and beauty equipment manufacturing
             </p>
         </div>
     </section>
 
     <!-- Company Overview -->
-    <section class="company-overview">
-        <div class="overview-container">
-            <div class="overview-grid">
-                <div class="overview-image animate-on-scroll fade-in">
-                    <div class="image-frame">
-                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800" alt="Medical Equipment Manufacturing" />
+    <section class="overview-section">
+        <div class="container">
+            <div class="two-col-grid">
+                <div class="content-column animate-on-scroll fade-in">
+                    <h2 class="section-title-left">Leading the Industry for Over <br> <span class="red-text">16 Years</span></h2>
+                    <p class="body-text">
+                        With over 16 years of continuous development and innovation, our products have earned an outstanding reputation in both domestic and international markets. We are committed to developing and manufacturing premium medical and beauty equipment, combining cutting-edge technology with unwavering dedication to excellence.
+                    </p>
+                    <p class="body-text">
+                        Our comprehensive product portfolio spans 14 specialized series, including CO2 laser systems, diode laser hair removal machines, 1064nm long pulse ND YAG lasers, picosecond laser technology, dental lasers, Q-Switch ND YAG lasers, spider vein removal lasers, multifunctional Elight IPL RF ND YAG systems, SHR technology, HIFU devices, LED therapy equipment, cryolipolysis slimming machines, cooling beauty systems, and advanced facial care machines.
+                    </p>
+                </div>
+                <div class="image-column animate-on-scroll fade-in delay-1">
+                    <div class="image-wrapper">
+                        <img src="/emp.png" alt="Medical Equipment Manufacturing" class="overview-img">
                         <div class="image-overlay"></div>
                     </div>
                 </div>
-                
-                <div class="overview-content animate-on-scroll slide-up delay-1">
-                    <span class="section-label">Our Commitment</span>
-                    <h2 class="section-title">
-                        Leading Innovation in <span class="red-text">Medical Aesthetics</span>
-                    </h2>
-                    <p class="overview-text">
-                        With over 16 years of continuous development and innovation, our products have earned an outstanding reputation in both domestic and international markets. We are committed to developing and manufacturing premium medical and beauty equipment, combining cutting-edge technology with unwavering dedication to excellence.
-                    </p>
-                    <p class="overview-text">
-                        Our comprehensive product portfolio spans 14 specialized series with over 40 distinct models, trusted by professionals across 60+ countries worldwide.
-                    </p>
-                    
-                    <div class="overview-features">
-                        <div class="feature-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
-                            <span>ISO Certified Quality</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
-                            <span>CE Approved Products</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                            </svg>
-                            <span>Global Distribution Network</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="stats-container">
+            <!-- Stats Grid -->
             <div class="stats-grid">
-                <div class="stat-box animate-on-scroll scale-up">
+                <div class="stat-card animate-on-scroll scale-up">
                     <div class="stat-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
                         </svg>
                     </div>
-                    <div class="stat-number" data-count="16">0</div>
-                    <div class="stat-label">Years of Excellence</div>
-                    <p class="stat-desc">Continuous innovation and development</p>
+                    <div class="stat-number">16+</div>
+                    <div class="stat-label">Years of Experience</div>
                 </div>
-
-                <div class="stat-box animate-on-scroll scale-up delay-1">
+                <div class="stat-card animate-on-scroll scale-up delay-1">
                     <div class="stat-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"/>
                             <line x1="2" y1="12" x2="22" y2="12"/>
                             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                         </svg>
                     </div>
-                    <div class="stat-number" data-count="60">0</div>
+                    <div class="stat-number">60+</div>
                     <div class="stat-label">Countries Served</div>
-                    <p class="stat-desc">Worldwide distribution network</p>
                 </div>
-
-                <div class="stat-box animate-on-scroll scale-up delay-2">
+                <div class="stat-card animate-on-scroll scale-up delay-2">
                     <div class="stat-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                         </svg>
                     </div>
-                    <div class="stat-number" data-count="14">0</div>
+                    <div class="stat-number">14</div>
                     <div class="stat-label">Product Series</div>
-                    <p class="stat-desc">Comprehensive technology portfolio</p>
                 </div>
-
-                <div class="stat-box animate-on-scroll scale-up delay-3">
+                <div class="stat-card animate-on-scroll scale-up delay-3">
                     <div class="stat-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/>
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
                         </svg>
                     </div>
-                    <div class="stat-number" data-count="40">0</div>
+                    <div class="stat-number">40+</div>
                     <div class="stat-label">Product Models</div>
-                    <p class="stat-desc">Diverse solutions for every need</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Portfolio -->
-    <section class="portfolio-section">
-        <div class="portfolio-container">
-            <div class="section-head animate-on-scroll slide-up">
-                <span class="section-label">Product Range</span>
-                <h2 class="section-title">
-                    Comprehensive <span class="red-text">Technology Portfolio</span>
-                </h2>
-                <p class="section-subtitle">
-                    14 specialized series covering every aspect of medical aesthetics and beauty treatments
-                </p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-card animate-on-scroll fade-in">
-                    <div class="portfolio-number">01</div>
-                    <h3 class="portfolio-title">CO2 Laser Systems</h3>
-                    <p class="portfolio-desc">Advanced fractional and ablative laser technology</p>
-                </div>
-
-                <div class="portfolio-card animate-on-scroll fade-in delay-1">
-                    <div class="portfolio-number">02</div>
-                    <h3 class="portfolio-title">Diode Laser Hair Removal</h3>
-                    <p class="portfolio-desc">Efficient permanent hair reduction solutions</p>
-                </div>
-
-                <div class="portfolio-card animate-on-scroll fade-in delay-2">
-                    <div class="portfolio-number">03</div>
-                    <h3 class="portfolio-title">1064nm ND YAG Laser</h3>
-                    <p class="portfolio-desc">Vascular and pigmentation treatment systems</p>
-                </div>
-
-                <div class="portfolio-card animate-on-scroll fade-in delay-3">
-                    <div class="portfolio-number">04</div>
-                    <h3 class="portfolio-title">Picosecond Laser</h3>
-                    <p class="portfolio-desc">Ultra-fast pulse technology for skin rejuvenation</p>
-                </div>
-
-                <div class="portfolio-card animate-on-scroll fade-in">
-                    <div class="portfolio-number">05</div>
-                    <h3 class="portfolio-title">IPL RF Systems</h3>
-                    <p class="portfolio-desc">Multifunctional beauty and skin treatment</p>
-                </div>
-
-                <div class="portfolio-card animate-on-scroll fade-in delay-1">
-                    <div class="portfolio-number">06</div>
-                    <h3 class="portfolio-title">HIFU Devices</h3>
-                    <p class="portfolio-desc">Non-invasive face and body lifting technology</p>
                 </div>
             </div>
         </div>
@@ -184,77 +94,102 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Factory Section -->
     <section class="factory-section">
-        <div class="factory-container">
-            <div class="factory-grid">
-                <div class="factory-content animate-on-scroll slide-up">
-                    <span class="section-label">Our Facility</span>
-                    <h2 class="section-title">
-                        State-of-the-Art <span class="red-text">Manufacturing</span>
-                    </h2>
-                    <p class="factory-text">
-                        Our fully-owned 7,000 m² manufacturing facility features state-of-the-art equipment and modern infrastructure designed for optimal production efficiency. With over 50 experienced professionals and a dedicated R&D team of 10 engineers, we ensure every product meets the highest quality standards.
-                    </p>
-                    
-                    <div class="factory-features">
-                        <div class="factory-feature">
-                            <div class="factory-feature-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="8" width="20" height="12" rx="2"/>
-                                    <path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>7,000 m² Facility</h4>
-                                <p>Modern manufacturing infrastructure</p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll slide-up">
+                <span class="section-label">Our Facility</span>
+                <h2 class="section-title">
+                    Modernized <span class="red-text">Factory</span>
+                </h2>
+                <p class="section-subtitle">State-of-the-art manufacturing facility with stringent quality control measures</p>
+            </div>
 
-                        <div class="factory-feature">
-                            <div class="factory-feature-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>50+ Professionals</h4>
-                                <p>Skilled workforce ensuring quality</p>
-                            </div>
-                        </div>
-
-                        <div class="factory-feature">
-                            <div class="factory-feature-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                    <path d="M2 17l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Expert R&D Team</h4>
-                                <p>10 hardware & software engineers</p>
-                            </div>
-                        </div>
-
-                        <div class="factory-feature">
-                            <div class="factory-feature-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>24-Hour Testing</h4>
-                                <p>Comprehensive quality control</p>
-                            </div>
+            <!-- Factory Images Grid -->
+            <div class="factory-images-grid animate-on-scroll fade-in">
+                <div class="factory-image-large">
+                    <div class="factory-img-wrapper">
+                        <img src="/fac.png" alt="Factory Exterior" class="factory-img">
+                        <div class="image-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="8" width="20" height="12" rx="2"/>
+                                <path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
+                            </svg>
+                            <span>7,000 m² Manufacturing Facility</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="factory-image animate-on-scroll fade-in delay-2">
-                    <div class="image-frame">
-                        <img src="/emp.png" alt="Manufacturing Facility" />
-                        <div class="image-overlay"></div>
+                <div class="factory-image-small">
+                    <div class="factory-img-wrapper">
+                        <img src="/prod.png" alt="production " class="factory-img">
+                        <div class="image-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                            </svg>
+                            <span>Production Floor</span>
+                        </div>
                     </div>
+                </div>
+                <div class="factory-image-small">
+                    <div class="factory-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581093804475-577d72e38aa0?q=80&w=800" alt="R&D Department" class="factory-img">
+                        <div class="image-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                            </svg>
+                            <span>R&D Department</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll fade-in">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="8" width="20" height="12" rx="2"/>
+                            <path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
+                            <line x1="2" y1="14" x2="22" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">7,000 m² Self-Owned Facility</h3>
+                    <p class="feature-description">Our fully-owned office building features state-of-the-art manufacturing equipment and modern infrastructure designed for optimal production efficiency.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll fade-in delay-1">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">50+ Experienced Professionals</h3>
+                    <p class="feature-description">Our skilled workforce ensures timely delivery through meticulous inspection processes and comprehensive 24-hour testing protocols for every equipment.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll fade-in delay-2">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Professional R&D Team</h3>
+                    <p class="feature-description">Our team of 10 exceptional hardware and software engineers continuously research, develop, and design innovative products that push industry boundaries.</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll fade-in delay-3">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Commitment to Excellence</h3>
+                    <p class="feature-description">Our professional R&D team maintains an unwavering focus on delivering world-class customer experiences through superior product quality and innovation.</p>
                 </div>
             </div>
         </div>
@@ -262,11 +197,11 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Team Section -->
     <section class="team-section">
-        <div class="team-container">
-            <div class="section-head animate-on-scroll slide-up">
+        <div class="container">
+            <div class="section-header animate-on-scroll slide-up">
                 <span class="section-label">Our People</span>
                 <h2 class="section-title">
-                    Expert <span class="red-text">Sales Team</span>
+                    Expert Sales <span class="red-text">Team</span>
                 </h2>
                 <p class="section-subtitle">
                     Professional team members trained with comprehensive knowledge to provide exceptional service
@@ -284,9 +219,7 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="team-card-title">Professional Training</h3>
-                    <p class="team-card-text">
-                        Our team members undergo extensive training programs, equipping them with professional knowledge to help every customer identify the ideal products.
-                    </p>
+                    <p class="team-card-description">Our team members undergo extensive training programs, equipping them with professional knowledge to help every customer identify the ideal products.</p>
                 </div>
 
                 <div class="team-card animate-on-scroll scale-up delay-1">
@@ -298,9 +231,7 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="team-card-title">Comprehensive Support</h3>
-                    <p class="team-card-text">
-                        We provide personalized guidance to help you gain a deeper understanding of our company, capabilities, and comprehensive solutions for your business.
-                    </p>
+                    <p class="team-card-description">We provide personalized guidance to help you gain a deeper understanding of our company, capabilities, and comprehensive solutions for your business.</p>
                 </div>
 
                 <div class="team-card animate-on-scroll scale-up delay-2">
@@ -311,34 +242,16 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="team-card-title">Responsive After-Sales</h3>
-                    <p class="team-card-text">
-                        Our dedicated support team addresses any after-sales concerns promptly and efficiently, ensuring complete customer satisfaction without delays.
-                    </p>
+                    <p class="team-card-description">Our dedicated support team addresses any after-sales concerns promptly and efficiently, ensuring complete customer satisfaction without delays.</p>
                 </div>
-            </div>
-
-            <div class="cta-box animate-on-scroll fade-in">
-                <a href="/contact" class="btn-red-large">
-                    <span>Contact Our Team</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
             </div>
         </div>
     </section>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
             --red: #e31e3f;
             --red-dark: #c41a35;
-            --red-light: #ff4d6d;
             --white: #ffffff;
             --gray-50: #f9fafb;
             --gray-100: #f3f4f6;
@@ -346,15 +259,35 @@ import Layout from '../layouts/Layout.astro';
             --gray-900: #111827;
         }
 
-        /* About Hero Section */
-        .about-hero {
-            background: var(--gray-50);
-            padding: 160px 60px 100px;
-            text-align: center;
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 60px;
         }
 
-        .about-hero-container {
-            max-width: 900px;
+        /* Page Header */
+        .page-header {
+            position: relative;
+            padding: 180px 60px 100px;
+            background: var(--white);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .header-wave {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.05) 0%, transparent 70%);
+            clip-path: ellipse(80% 60% at 70% 20%);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -362,14 +295,16 @@ import Layout from '../layouts/Layout.astro';
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--white);
+            background: var(--gray-50);
             padding: 10px 20px;
             border-radius: 50px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             color: var(--gray-900);
-            margin-bottom: 32px;
-            border: 2px solid var(--gray-100);
+            margin-bottom: 24px;
+            border: 1px solid var(--gray-100);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .badge-dot {
@@ -385,13 +320,13 @@ import Layout from '../layouts/Layout.astro';
             50% { transform: scale(1.2); opacity: 0.8; }
         }
 
-        .about-hero-heading {
+        .header-title {
             font-family: 'Playfair Display', serif;
-            font-size: 72px;
+            font-size: 56px;
             font-weight: 700;
-            line-height: 1.1;
             color: var(--gray-900);
-            margin-bottom: 28px;
+            margin-bottom: 20px;
+            line-height: 1.2;
             letter-spacing: -1px;
         }
 
@@ -399,42 +334,56 @@ import Layout from '../layouts/Layout.astro';
             color: var(--red);
         }
 
-        .about-hero-text {
-            font-size: 20px;
-            line-height: 1.7;
+        .header-subtitle {
+            font-size: 18px;
             color: var(--gray-600);
-            max-width: 700px;
+            line-height: 1.7;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Company Overview */
-        .company-overview {
-            background: var(--white);
-            padding: 120px 60px;
+        /* Overview Section */
+        .overview-section {
+            background: var(--gray-50);
+            padding: 100px 0;
         }
 
-        .overview-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .overview-grid {
+        .two-col-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: center;
+            margin-bottom: 80px;
         }
 
-        .image-frame {
+        .section-title-left {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            color: var(--gray-900);
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        .body-text {
+            font-size: 16px;
+            color: var(--gray-600);
+            line-height: 1.9;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .image-wrapper {
             position: relative;
-            border-radius: 24px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
-        .image-frame img {
+        .overview-img {
             width: 100%;
-            height: 550px;
+            height: 500px;
             object-fit: cover;
             display: block;
         }
@@ -448,11 +397,72 @@ import Layout from '../layouts/Layout.astro';
             background: linear-gradient(135deg, rgba(227, 30, 63, 0.1) 0%, transparent 100%);
         }
 
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .stat-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.15);
+        }
+
+        .stat-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.1) 0%, rgba(227, 30, 63, 0.05) 100%);
+            border-radius: 12px;
+            color: var(--red);
+            margin-bottom: 20px;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--red);
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--gray-600);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Factory Section */
+        .factory-section {
+            background: var(--white);
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
         .section-label {
             display: inline-block;
-            background: var(--white);
+            background: var(--gray-50);
             color: var(--red);
-            padding: 8px 24px;
+            padding: 8px 20px;
             border-radius: 50px;
             font-size: 12px;
             font-weight: 700;
@@ -464,277 +474,137 @@ import Layout from '../layouts/Layout.astro';
 
         .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: 48px;
+            font-size: 44px;
             font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 24px;
-            line-height: 1.2;
-            letter-spacing: -1px;
-        }
-
-        .overview-text {
-            font-size: 17px;
-            line-height: 1.8;
-            color: var(--gray-600);
-            margin-bottom: 20px;
-        }
-
-        .overview-features {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-top: 32px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--gray-900);
-        }
-
-        .feature-item svg {
-            color: var(--red);
-            flex-shrink: 0;
-        }
-
-        /* Stats Section */
-        .stats-section {
-            background: var(--gray-50);
-            padding: 100px 60px;
-        }
-
-        .stats-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px;
-        }
-
-        .stat-box {
-            background: var(--white);
-            padding: 48px 32px;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .stat-box:hover {
-            transform: translateY(-8px);
-            border-color: var(--red);
-            box-shadow: 0 20px 40px rgba(227, 30, 63, 0.15);
-        }
-
-        .stat-icon {
-            color: var(--red);
-            margin-bottom: 24px;
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 56px;
-            font-weight: 700;
-            color: var(--red);
-            line-height: 1;
-            margin-bottom: 12px;
-        }
-
-        .stat-number::after {
-            content: '+';
-            font-size: 36px;
-        }
-
-        .stat-label {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .stat-desc {
-            font-size: 14px;
-            color: var(--gray-600);
-            line-height: 1.5;
-        }
-
-        /* Portfolio Section */
-        .portfolio-section {
-            background: var(--white);
-            padding: 120px 60px;
-        }
-
-        .portfolio-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-head {
-            text-align: center;
-            margin-bottom: 80px;
-        }
-
-        .section-subtitle {
-            font-size: 18px;
-            color: var(--gray-600);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-        }
-
-        .portfolio-card {
-            background: var(--gray-50);
-            padding: 40px 32px;
-            border-radius: 16px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--red);
-            background: var(--white);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .portfolio-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            font-weight: 700;
-            color: var(--red);
-            opacity: 0.2;
-            line-height: 1;
             margin-bottom: 16px;
-        }
-
-        .portfolio-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 700;
             color: var(--gray-900);
-            margin-bottom: 12px;
             letter-spacing: -0.5px;
         }
 
-        .portfolio-desc {
-            font-size: 15px;
-            line-height: 1.6;
-            color: var(--gray-600);
-        }
-
-        /* Factory Section */
-        .factory-section {
-            background: var(--gray-50);
-            padding: 120px 60px;
-        }
-
-        .factory-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .factory-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .factory-text {
+        .section-subtitle {
             font-size: 17px;
-            line-height: 1.8;
             color: var(--gray-600);
-            margin-bottom: 32px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
         }
 
-        .factory-features {
+        /* Factory Images */
+        .factory-images-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .factory-img-wrapper {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 350px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .factory-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: var(--white);
+            padding: 24px 20px;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
         }
 
-        .factory-feature {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
+        .feature-card {
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            border-radius: 12px;
+            padding: 32px;
+            transition: all 0.3s ease;
         }
 
-        .factory-feature-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--white);
+        .feature-card:hover {
+            border-color: var(--red);
+            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon-box {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.1) 0%, rgba(227, 30, 63, 0.05) 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 24px;
             color: var(--red);
-            flex-shrink: 0;
         }
 
-        .factory-feature h4 {
-            font-size: 17px;
+        .feature-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
             font-weight: 700;
             color: var(--gray-900);
-            margin-bottom: 4px;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
         }
 
-        .factory-feature p {
-            font-size: 14px;
+        .feature-description {
+            font-size: 15px;
             color: var(--gray-600);
-            line-height: 1.5;
+            line-height: 1.8;
         }
 
         /* Team Section */
         .team-section {
-            background: var(--white);
-            padding: 120px 60px;
-        }
-
-        .team-container {
-            max-width: 1400px;
-            margin: 0 auto;
+            background: var(--gray-50);
+            padding: 100px 0;
         }
 
         .team-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-            margin-bottom: 60px;
+            gap: 24px;
         }
 
         .team-card {
-            background: var(--gray-50);
-            padding: 48px 36px;
-            border-radius: 16px;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px 32px;
             text-align: center;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
         .team-card:hover {
+            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.15);
             transform: translateY(-8px);
-            border-color: var(--red);
-            background: var(--white);
-            box-shadow: 0 20px 40px rgba(227, 30, 63, 0.15);
         }
 
         .team-icon-box {
-            width: 88px;
-            height: 88px;
-            background: var(--white);
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(227, 30, 63, 0.1) 0%, rgba(227, 30, 63, 0.05) 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -745,42 +615,17 @@ import Layout from '../layouts/Layout.astro';
 
         .team-card-title {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
             color: var(--gray-900);
             margin-bottom: 16px;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.3px;
         }
 
-        .team-card-text {
-            font-size: 16px;
-            line-height: 1.7;
+        .team-card-description {
+            font-size: 15px;
             color: var(--gray-600);
-        }
-
-        .cta-box {
-            text-align: center;
-        }
-
-        .btn-red-large {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: var(--red);
-            color: var(--white);
-            padding: 20px 44px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            box-shadow: 0 8px 24px rgba(227, 30, 63, 0.3);
-        }
-
-        .btn-red-large:hover {
-            background: var(--red-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(227, 30, 63, 0.4);
+            line-height: 1.8;
         }
 
         /* Animations */
@@ -800,9 +645,7 @@ import Layout from '../layouts/Layout.astro';
         .delay-3 { animation-delay: 0.6s; }
 
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+            to { opacity: 1; }
         }
 
         @keyframes slideUp {
@@ -821,20 +664,20 @@ import Layout from '../layouts/Layout.astro';
             opacity: 1;
         }
 
-        .slide-up {
-            transform: translateY(60px);
-        }
-
-        .slide-up.animated {
-            transform: translateY(0);
-        }
-
         .fade-in {
             opacity: 0;
         }
 
         .fade-in.animated {
             opacity: 1;
+        }
+
+        .slide-up {
+            transform: translateY(40px);
+        }
+
+        .slide-up.animated {
+            transform: translateY(0);
         }
 
         .scale-up {
@@ -847,69 +690,73 @@ import Layout from '../layouts/Layout.astro';
 
         /* Responsive */
         @media (max-width: 1200px) {
-            .overview-grid,
-            .factory-grid {
+            .container {
+                padding: 0 40px;
+            }
+
+            .two-col-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 48px;
             }
 
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .portfolio-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .factory-images-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
             }
 
             .team-grid {
                 grid-template-columns: 1fr;
             }
-
-            .factory-grid .factory-content {
-                order: 2;
-            }
-
-            .factory-grid .factory-image {
-                order: 1;
-            }
         }
 
         @media (max-width: 768px) {
-            .about-hero {
-                padding: 120px 24px 80px;
+            .page-header {
+                padding: 140px 24px 60px;
             }
 
-            .about-hero-heading {
-                font-size: 42px;
+            .container {
+                padding: 0 24px;
             }
 
-            .about-hero-text {
-                font-size: 17px;
+            .header-title {
+                font-size: 36px;
             }
 
-            .company-overview,
-            .stats-section,
-            .portfolio-section,
-            .factory-section,
-            .team-section {
-                padding: 80px 24px;
+            .header-subtitle {
+                font-size: 16px;
             }
 
             .section-title {
                 font-size: 32px;
             }
 
-            .stats-grid,
-            .portfolio-grid {
+            .section-title-left {
+                font-size: 28px;
+            }
+
+            .overview-section,
+            .factory-section,
+            .team-section {
+                padding: 60px 0;
+            }
+
+            .stats-grid {
                 grid-template-columns: 1fr;
             }
 
-            .image-frame img {
-                height: 350px;
+            .overview-img {
+                height: 300px;
             }
 
-            .overview-features {
-                margin-top: 24px;
+            .factory-img-wrapper {
+                height: 250px;
             }
         }
     </style>
@@ -918,7 +765,7 @@ import Layout from '../layouts/Layout.astro';
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -931,36 +778,6 @@ import Layout from '../layouts/Layout.astro';
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
-        });
-
-        // Counter animation
-        const animateCounter = (element, target) => {
-            let current = 0;
-            const increment = target / 60;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = Math.floor(target);
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current);
-                }
-            }, 25);
-        };
-
-        document.querySelectorAll('.stat-number').forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-count'));
-            
-            const counterObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && counter.textContent === '0') {
-                        animateCounter(counter, target);
-                        counterObserver.unobserve(counter);
-                    }
-                });
-            }, { threshold: 0.5 });
-            
-            counterObserver.observe(counter);
         });
     </script>
 </Layout>
